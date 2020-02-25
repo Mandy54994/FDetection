@@ -1,0 +1,247 @@
+.page {
+    width: 1366px;
+    height: 1130px;
+    background: #E5E5E5;
+}
+
+body {
+    width: 100%;
+    max-width: 1366px;
+    /* or whatever width you want */
+    /* margin-right: auto;
+    margin-left: auto;*/
+}
+
+.CSecurity {
+    position: absolute;
+    width: 223px;
+    height: 101px;
+    left: 66px;
+    top: 140px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 49px;
+    display: flex;
+    align-items: center;
+
+    color: #6C63FF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.CSecurityText {
+    position: absolute;
+    width: 620px;
+    height: 174px;
+    left: 62px;
+    top: 230px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #000000;
+}
+
+.rectangle10 {
+    position: absolute;
+    width: 407px;
+    height: 246px;
+    left: 55px;
+    top: 474px;
+
+    background: #6C63FF;
+    border-radius: 10px;
+}
+
+.rectangle7 {
+    position: absolute;
+    width: 335px;
+    height: 180px;
+    left: 9px;
+    top: 9px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.rectangle8 {
+    position: absolute;
+    width: 335px;
+    height: 180px;
+    left: 513px;
+    top: 483px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.rectangle9 {
+    position: absolute;
+    width: 335px;
+    height: 180px;
+    left: 962px;
+    top: 483px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.hww {
+    position: absolute;
+    width: 140px;
+    height: 150px;
+    left: 185px;
+    top: 21px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #000000;
+}
+
+.aboutUs {
+    position: absolute;
+    width: 78px;
+    height: 15px;
+    left: 119px;
+    top: 66px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.contactUs {
+    position: absolute;
+    width: 99px;
+    height: 17px;
+    left: 120px;
+    top: 119px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.followUs {
+    position: absolute;
+    width: 220px;
+    height: 72px;
+    left: 99px;
+    top: 156px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.hr2 {
+    position: absolute;
+    width: 1366px;
+    height: 0px;
+    left: 0px;
+    top: 341px;
+
+    border: 2px solid #FFFFFF;
+    transform: rotate(0.04deg);
+}
+
+.vom {
+    position: absolute;
+    width: 258px;
+    height: 72px;
+    left: 952px;
+    top: 2px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.bankPartners {
+    position: absolute;
+    width: 116px;
+    height: 17px;
+    left: 119px;
+    top: 91px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.rectangle1 {
+    position: absolute;
+    width: 1366px;
+    height: 375px;
+    left: 0px;
+    top: 754px;
+
+    background: #6C63FF;
+}
+
+.FDetection {
+    position: relative;
+    width: 220px;
+    height: 72px;
+    left: 99px;
+    top: 2px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
