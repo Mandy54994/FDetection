@@ -4,10 +4,28 @@
     background: #E5E5E5;
 }
 
+
+.growing {
+    position: absolute;
+    width: 164px;
+    height: 152px;
+    left: 9px;
+    top: 16px;
+}
+
+.dataReport {
+    position: absolute;
+    width: 100%;
+    max-width: 195px;
+    height: 137px;
+    left: 8px;
+    top: 27px;
+}
+
 body {
     width: 100%;
     max-width: 1349px;
-    background-color: #000000;
+    background-color: #E5E5E5;
     /* or whatever width you want */
     /* margin-right: auto;
     margin-left: auto;*/
@@ -98,8 +116,42 @@ body {
     left: 55px;
     top: 474px;
 
-    background: #6C63FF;
+    background: #E5E5E5;
     border-radius: 10px;
+}
+
+.rectangle12 {
+    position: absolute;
+    width: 407px;
+    height: 246px;
+    left: 953px;
+    top: 474px;
+
+    background: #E5E5E5;
+    border-radius: 10px;
+}
+
+.rectangle12:hover {
+    background: #6C63FF;
+}
+
+.rectangle11 {
+    position: absolute;
+    width: 407px;
+    height: 246px;
+    left: 500px;
+    top: 474px;
+
+    background: #E5E5E5;
+    border-radius: 10px;
+}
+
+.rectangle10:hover {
+    background: #6C63FF;
+}
+
+.rectangle11:hover {
+    background: #6C63FF;
 }
 
 .rectangle7 {
@@ -118,8 +170,8 @@ body {
     position: absolute;
     width: 335px;
     height: 180px;
-    left: 513px;
-    top: 483px;
+    left: 9px;
+    top: 9px;
 
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -130,20 +182,116 @@ body {
     position: absolute;
     width: 335px;
     height: 180px;
-    left: 962px;
-    top: 483px;
+    left: 9px;
+    top: 9px;
 
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
 }
 
-.hww {
+.hww2 {
+    position: absolute;
+    width: 140px;
+    height: 150px;
+    left: 196px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #000000;
+}
+
+.facebook {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 119px;
+    top: 223px;
+}
+
+.hww3 {
+    position: absolute;
+    width: 140px;
+    height: 150px;
+    left: 168px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #000000;
+}
+
+.dotCon {
+    position: absolute;
+    top: 723px;
+    left: 627px;
+}
+
+.active1 {
+    background-color: #6C63FF;
+}
+
+.dot:hover {
+    background-color: #6C63FF;
+}
+
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    border: 1px solid #021a40;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    top: 673px;
+}
+
+.instagram {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 169px;
+    top: 223px;
+}
+
+.linedin {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 219px;
+    top: 223px;
+}
+
+.twitter {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 269px;
+    top: 223px;
+}
+
+.securityOn {
+    position: absolute;
+    width: 162px;
+    height: 157px;
+    left: 8px;
+    top: 16px
+}
+
+.hww1 {
     position: absolute;
     width: 140px;
     height: 150px;
     left: 185px;
-    top: 21px;
 
     font-family: Montserrat;
     font-style: normal;
