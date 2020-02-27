@@ -69,8 +69,6 @@ body {
     height: 358px;
     left: 727px;
     top: 100px;
-
-    background: url(undraw_security_o890.png);
 }
 
 .CSecurity {
@@ -118,6 +116,7 @@ body {
 
     background: #E5E5E5;
     border-radius: 10px;
+    transition: background-color 0.6s ease;
 }
 
 .rectangle12 {
@@ -129,11 +128,13 @@ body {
 
     background: #E5E5E5;
     border-radius: 10px;
+    transition: background-color 0.6s ease;
 }
 
+/* 
 .rectangle12:hover {
     background: #6C63FF;
-}
+} */
 
 .rectangle11 {
     position: absolute;
@@ -144,15 +145,16 @@ body {
 
     background: #E5E5E5;
     border-radius: 10px;
+    transition: background-color 0.6s ease;
 }
 
-.rectangle10:hover {
+/* .rectangle10:hover {
     background: #6C63FF;
 }
 
 .rectangle11:hover {
     background: #6C63FF;
-}
+} */
 
 .rectangle7 {
     position: absolute;
@@ -238,9 +240,9 @@ body {
     background-color: #6C63FF;
 }
 
-.dot:hover {
+/* .dot:hover {
     background-color: #6C63FF;
-}
+} */
 
 
 .dot {
