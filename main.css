@@ -1,9 +1,27 @@
-.page {
+/* .page {
     width: 1366px;
     height: 1130px;
     background: #E5E5E5;
+} */
+
+html {
+    font-family: Montserrat;
 }
 
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+} */
 
 .growing {
     position: absolute;
@@ -23,8 +41,8 @@
 }
 
 body {
-    width: 100%;
-    max-width: 1349px;
+    /* width: 100%; */
+    /* max-width: 1349px; */
     background-color: #E5E5E5;
     /* or whatever width you want */
     /* margin-right: auto;
@@ -37,7 +55,7 @@ body {
     width: 326px;
     height: 66px;
     left: 66px;
-    top: 410px;
+    top: 450px;
 
     font-family: Montserrat;
     font-style: normal;
@@ -63,19 +81,46 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.container1 {
+    height: 483px;
+}
+
 .security890 {
-    position: absolute;
-    width: 561px;
+    /* position: absolute; */
+    width: 100%;
     height: 358px;
-    left: 727px;
-    top: 100px;
+    /* left: 727px; */
+    top: 50px;
+
+    background-size: contain;
+    background-image: url("assets/undraw_security_o890.png");
+}
+
+.getStarted {
+    position: relative;
+    width: 139px;
+    height: 35px;
+    left: 58px;
+    top: 366px;
+
+    background-color: #6C63FF;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
 }
 
 .CSecurity {
     position: absolute;
-    width: 223px;
+    width: 16.67%;
     height: 101px;
-    left: 66px;
+    left: 62px;
     top: 100px;
 
     font-family: Montserrat;
@@ -93,7 +138,7 @@ body {
 
 .CSecurityText {
     position: absolute;
-    width: 620px;
+    width: 45%;
     height: 174px;
     left: 62px;
     top: 230px;
@@ -112,7 +157,7 @@ body {
     width: 407px;
     height: 246px;
     left: 55px;
-    top: 474px;
+    top: 525px;
 
     background: #E5E5E5;
     border-radius: 10px;
@@ -124,7 +169,7 @@ body {
     width: 407px;
     height: 246px;
     left: 953px;
-    top: 474px;
+    top: 525px;
 
     background: #E5E5E5;
     border-radius: 10px;
@@ -141,7 +186,7 @@ body {
     width: 407px;
     height: 246px;
     left: 500px;
-    top: 474px;
+    top: 525px;
 
     background: #E5E5E5;
     border-radius: 10px;
@@ -232,7 +277,7 @@ body {
 
 .dotCon {
     position: absolute;
-    top: 723px;
+    top: 775px;
     left: 627px;
 }
 
@@ -254,7 +299,7 @@ body {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-    top: 673px;
+    top: 725px;
 }
 
 .instagram {
@@ -411,7 +456,7 @@ body {
 
 .rectangle1 {
     position: absolute;
-    width: 1366px;
+    width: 100%;
     height: 375px;
     left: 0px;
     top: 754px;
@@ -437,4 +482,16 @@ body {
     color: #FFFFFF;
 
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 320px) {
+    .security890 {
+        display: block;
+        width: 100%;
+        float: none;
+    }
+
+    html {
+        background-color: #6C63FF;
+    }
 }

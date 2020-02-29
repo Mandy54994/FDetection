@@ -1,3 +1,10 @@
+document.addEventListener('DOMContentLoaded', function () {
+    M.AutoInit();
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, options);
+});
+
+
 function runDot() {
     console.log('running');
     setTimeout(function () {
@@ -60,29 +67,29 @@ function runDiv() {
 //     var rect12 = document.querySelector('.rectangle12');
 // });
 $(document).ready(function () {
+    $('.sidenav').sidenav();
     console.log("Ready!");
-    runDot();
-    runDiv();
-    var myDOt = setInterval("runDot()", 3000);
-    var myDiv = setInterval("runDiv()", 3000);
-    $('.vom').click(function (e) {
-        e.preventDefault();
-        setTimeout(function () {
-            $('div span:nth-child(1)').css("background-color", "#6c63ff");
-            $('div span:nth-child(2)').css("background-color", "#e5e5e5");
-            $('div span:nth-child(3)').css("background-color", "#e5e5e5");
-        }, 1000);
-        setTimeout(function () {
-            $('div span:nth-child(2)').css("background-color", "#6c63ff");
-            $('div span:nth-child(1)').css("background-color", "#e5e5e5");
-            $('div span:nth-child(3)').css("background-color", "#e5e5e5");
-        }, 2000);
-        setTimeout(function () {
-            $('div span:nth-child(3)').css("background-color", "#6c63ff");
-            $('div span:nth-child(2)').css("background-color", "#e5e5e5");
-            $('div span:nth-child(1)').css("background-color", "#e5e5e5");
-        }, 3000);
+    // runDot();
+    // runDiv();
+    // var myDOt = setInterval("runDot()", 3000);
+    // var myDiv = setInterval("runDiv()", 3000);
+    // $('.vom').click(function (e) {
+    //     e.preventDefault();
+    //     setTimeout(function () {
+    //         $('div span:nth-child(1)').css("background-color", "#6c63ff");
+    //         $('div span:nth-child(2)').css("background-color", "#e5e5e5");
+    //         $('div span:nth-child(3)').css("background-color", "#e5e5e5");
+    //     }, 1000);
+    //     setTimeout(function () {
+    //         $('div span:nth-child(2)').css("background-color", "#6c63ff");
+    //         $('div span:nth-child(1)').css("background-color", "#e5e5e5");
+    //         $('div span:nth-child(3)').css("background-color", "#e5e5e5");
+    //     }, 2000);
+    //     setTimeout(function () {
+    //         $('div span:nth-child(3)').css("background-color", "#6c63ff");
+    //         $('div span:nth-child(2)').css("background-color", "#e5e5e5");
+    //         $('div span:nth-child(1)').css("background-color", "#e5e5e5");
+    //     }, 3000);
 
-    });
-    // $('div span:nth-child(2)').css("background-color", "#6c63ff");
+    // });
 });
