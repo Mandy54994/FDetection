@@ -4,9 +4,10 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Page Title</title>
+    <title>FDetection</title>
+    <link rel="icon" href="css/assets/intrusion.png" type="image/icon type" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
@@ -21,6 +22,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <script src="jquery-3.4.1.min.js"></script>
     <script src="main.js"></script>
   </head>
@@ -53,7 +55,7 @@
     <div class="navbar-fixed">
       <nav id="navigation-bar" style="background-color: white;">
         <div class="navbar-fixed">
-          <a href="#!" class="brand-logo"
+          <a href="index.html" class="brand-logo"
             ><img src="css/assets/logo.png" class="logo" />
             <div class="brand-text">FDetection</div>
           </a>
@@ -141,15 +143,24 @@
     <div class="rectangle1">
       <div class="FDetection">FDetection</div>
       <div class="vom">View on map</div>
-      <a class="aboutUs" href="#">About Us</a>
-      <a class="bankPartners" href="#">Bank Partners</a>
-      <a class="contactUs" href="#">Contact Us</a>
-      <div class="followUs">Follow Us</div>
+      <div id="map"></div>
+      <a class="aboutUs social" href="#">About Us</a>
+      <a class="bankPartners social" href="#">Bank Partners</a>
+      <a class="contactUs social" href="#">Contact Us</a>
+      <div class="followUs social">Follow Us</div>
       <a><img src="assets/facebook.png" alt="" class="facebook"/></a>
       <a><img src="assets/instagram-sketched.png" alt="" class="instagram"/></a>
       <a><img src="assets/linkedin.png" alt="" class="linedin"/></a>
       <a><img src="assets/twitter.png" alt="" class="twitter"/></a>
       <hr class="hr2" />
     </div>
+    <script
+      type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZ_014TAKNwjEFn9idM6h4I3__36gn004&sensor=false"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js"
+    ></script>
   </body>
 </html>

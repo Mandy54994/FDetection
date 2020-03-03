@@ -46,6 +46,13 @@ html {
 
 .home {
     color: #6C63FF;
+    font-weight: 600;
+}
+
+.about-us:hover,
+.bank:hover {
+    color: #6C63FF;
+    background-color: unset;
 }
 
 .about-us,
