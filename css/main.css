@@ -4,6 +4,103 @@
     background: #FFFFFF;
 }
 
+html {
+    font-family: Montserrat;
+}
+
+.navbar-fixed {
+    height: 50px;
+}
+
+#navigation-bar {
+    height: 50px;
+    box-shadow: 0px 1px 4px #6C63FF;
+}
+
+.brand-text {
+    position: absolute;
+    width: 165px;
+    height: 32px;
+    left: 48px;
+    top: 8px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+    position: absolute;
+    width: 36px;
+    height: 35px;
+    left: 9px;
+    top: 8px;
+}
+
+.material-icons {
+    color: #6C63FF;
+}
+
+.home {
+    color: #6C63FF;
+    font-weight: 600;
+}
+
+.about-us:hover,
+.bank:hover {
+    color: #6C63FF;
+    background-color: unset;
+}
+
+.about-us,
+.bank {
+    color: black;
+}
+
+.started {
+    background-color: #6C63FF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+}
+
+.right {
+    line-height: 49px;
+}
+
+.right-img {
+    width: 561px;
+    height: 358px;
+    margin-top: 10%
+}
+
+.heading {
+    position: absolute;
+    width: 223px;
+    height: 101px;
+    left: 7%;
+    top: 100px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 40px;
+    line-height: 49px;
+    display: flex;
+    align-items: center;
+
+    color: #6C63FF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
 .growing {
     position: absolute;
@@ -113,6 +210,184 @@ body {
     height: 235px;
     left: 972px;
     top: 69px;
+}
+
+.rectangle13 {
+    /* position: absolute; */
+    /* width: 1152px;*/
+    height: 52px;
+    /* left: 111px; */
+    background: rgba(108, 99, 255, 0.5);
+}
+
+.saqLogo {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 797px;
+    top: 193px;
+}
+
+.logoC {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 135px;
+}
+
+.plus {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 16px;
+    top: 15px;
+    display: block;
+}
+
+.faq1 {
+    position: absolute;
+    width: 1069px;
+    height: 52px;
+    top: -1px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.saq {
+    position: absolute;
+    width: 285px;
+    height: 72px;
+    left: 854px;
+    top: 175px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    text-decoration-line: underline;
+
+    color: #000000;
+}
+
+.faq {
+    position: absolute;
+    width: 423px;
+    height: 34px;
+    left: 109px;
+    top: 485px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.whatsapp {
+
+    position: absolute;
+    width: 468px;
+    height: 43px;
+    left: 174px;
+    top: 361px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+
+}
+
+.mail {
+    position: absolute;
+    width: 468px;
+    height: 43px;
+    left: 174px;
+    top: 304px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.phone {
+    position: absolute;
+    width: 314px;
+    height: 43px;
+    left: 174px;
+    top: 247px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.generalEnquiries {
+
+    position: absolute;
+    width: 321px;
+    height: 72px;
+    left: 109px;
+    top: 177px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    text-decoration-line: underline;
+
+    color: #000000;
+}
+
+.rectangle3 {
+    position: absolute;
+    width: 448px;
+    height: 209px;
+    left: 797px;
+    top: 246px;
+
+    background: #FFFFFF;
+    border: 1px solid #6C63FF;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
 }
 
 .rectangle10 {
@@ -453,4 +728,28 @@ body {
     color: #FFFFFF;
 
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media only screen and (max-width: 992px) {
+    .nav-wrapper {
+        width: 82%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-wrapper {
+        width: 73%;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .brand-logo {
+        width: 26%;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .brand-logo {
+        width: 91px;
+    }
 }
