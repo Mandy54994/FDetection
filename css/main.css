@@ -227,6 +227,35 @@ body {
     color: #000000;
 }
 
+.hWorkHead {
+    position: absolute;
+    height: 72px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.hWorkText {
+    position: absolute;
+    height: auto;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
 .security890 {
     position: absolute;
     width: 561px;
