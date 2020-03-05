@@ -54,6 +54,11 @@ html {
     color: black;
 }
 
+.home:hover {
+    color: #6C63FF;
+    background-color: unset;
+}
+
 .about-us:hover,
 .bank:hover {
     color: #6C63FF;
