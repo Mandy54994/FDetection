@@ -235,6 +235,35 @@ body {
     color: #000000;
 }
 
+td {
+    text-align: center;
+}
+
+.date {
+    width: 76px;
+    align-items: center;
+}
+
+.description {
+    width: 219px;
+    align-items: center;
+}
+
+.withdrawl {
+    width: 120px;
+    align-items: center;
+}
+
+.deposit {
+    width: 101px;
+    align-items: center;
+}
+
+.balance {
+    width: 99px;
+    align-items: center;
+}
+
 .selectedOne1 {
     color: #FFFFFF;
     font-weight: 600;
