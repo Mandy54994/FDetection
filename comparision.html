@@ -4,12 +4,16 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>FDetection</title>
     <link rel="icon" href="css/assets/intrusion.png" type="image/icon type" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <script src="jquery-3.4.1.min.js"></script>
     <script src="main.js"></script>
@@ -29,65 +33,44 @@
                     <li><a href="AboutUs.html" class="about-us">About Us</a></li>
                     <li><a href="collapsible.html" class="bank">Bank Partners</a></li>
                     <li>
-                        <a class="waves-effect waves-light btn started"
-                            style="margin-left: 10px; margin-right: 10px; margin-bottom: 0px;">Get Started</a>
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            style="padding-top: 7px; margin-right: 5px">
+                            <path
+                                d="M20 0C8.97219 0 0 8.97219 0 20C0 31.0278 8.97219 40 20 40C31.0278 40 40 31.0278 40 20C40 8.97219 31.0278 0 20 0ZM20 5.83336C25.284 5.83336 29.5834 10.1327 29.5834 15.4167C29.5834 20.7008 25.284 25 20 25C14.716 25 10.4166 20.7007 10.4166 15.4166C10.4166 10.1326 14.716 5.83336 20 5.83336ZM20 36.6666C14.5541 36.6666 9.725 34.0295 6.6818 29.978C10.0159 28.3737 14.7772 26.6666 20 26.6666C25.2232 26.6666 29.9849 28.374 33.3183 29.9778C30.2751 34.0295 25.4459 36.6666 20 36.6666Z"
+                                fill="#6C63FF" />
+                        </svg>
                     </li>
                 </ul>
             </div>
         </nav>
     </div>
+    <div class="CSecurity">Results:</div>
+    <table class="pdfTable">
+        <tr>
+            <th>Date</th>
+            <th>Description</th>
+            <th>Withdrawl</th>
+            <th>Deposit</th>
+            <th>Balance</th>
+        </tr>
+    </table>
 
-    <ul class="sidenav" id="mobile-demo">
-        <li><a href="index.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
-    </ul>
-    <div class="CSecurity">Contact Us</div>
-    <div class="generalEnquiries">General Enquiries</div>
-    <div class="saq">Send a question:</div>
-    <img src="css/assets/plane.png" alt="" class="saqLogo" />
-    <img src="css/assets/phone.png" alt="" class="logoC" style="top: 253px;" />
-    <img src="css/assets/mail.png" alt="" class="logoC" style="top: 307px;" />
-    <img src="css/assets/whatsapp.png" alt="" class="logoC" style="top: 368px;" />
-    <div class="phone">: + 91 XXXXX XXXXX</div>
-    <div class="mail">: lorem.ipsem@domain.com</div>
-    <div class="whatsapp">: + 91 XXXXX XXXXX</div>
-    <div class="faq">Frequently Asked Questions:</div>
-    <div class="rectangle3">
-        <textarea rows="50" cols="50" class="rectangle3" style="left: unset; right: unset; top: unset; resize: none;"
-            placeholder="Type your text here.."></textarea>
-        <a class="waves-effect waves-light btn started"
-            style="margin-left: 10px; margin-right: 10px; margin-bottom: 0px; top: 162px;left: 296px; width: 130px; height: 35px;">Submit</a>
-    </div>
-    <ul class="collapsible popout" style="position:absolute;top: 597px; width: 1152px;left:111px;">
-        <li>
-            <div class="collapsible-header rectangle13">
-                <img src="css/assets/plus.png" class="plus" />Lorem ipsum dolor sit
-                amet
-            </div>
-            <div class="collapsible-body">Lorem ipsum dolor sit amet.</div>
-        </li>
-        <li>
-            <div class="collapsible-header rectangle13">
-                <img src="css/assets/plus.png" class="plus" style="top: inherit;" />Lorem ipsum dolor sit amet
-            </div>
-            <div class="collapsible-body">Lorem ipsum dolor sit amet.</div>
-        </li>
-        <li>
-            <div class="collapsible-header rectangle13">
-                <img src="css/assets/plus.png" class="plus" style="top: inherit;" />Lorem ipsum dolor sit amet
-            </div>
-            <div class="collapsible-body">Lorem ipsum dolor sit amet.</div>
-        </li>
-    </ul>
+    <table class="mongodbTable">
+        <tr>
+            <th>Date</th>
+            <th>Description</th>
+            <th>Withdrawl</th>
+            <th>Deposit</th>
+            <th>Balance</th>
+        </tr>
+    </table>
     <div class="rectangle1" style="top: 875px;">
         <div class="FDetection">FDetection</div>
         <div class="vom">View on map</div>
         <div id="map"></div>
         <a class="aboutUs social" href="AboutUs.html">About Us</a>
         <a class="bankPartners social" href="#">Bank Partners</a>
-        <a class="contactUs social selectedOne1" href="ContactUs.html">Contact Us</a>
+        <a class="contactUs social" href="ContactUs.html">Contact Us</a>
         <div class="followUs social">Follow Us</div>
         <a><img src="assets/facebook.png" alt="" class="socialMedia" style="left: 119px;" /></a>
         <a><img src="assets/instagram-sketched.png" alt="" class="socialMedia" style="left: 169px;" /></a>
