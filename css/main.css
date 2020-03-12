@@ -66,6 +66,24 @@ th {
     color: black;
 }
 
+#dataPDF1 {
+    position: absolute;
+    width: 328px;
+    height: 46px;
+    left: 898px;
+    top: 211px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+
+    color: black;
+}
+
 .from {
     position: absolute;
     width: 52px;

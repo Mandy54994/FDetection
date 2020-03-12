@@ -127,12 +127,25 @@ $(document).ready(function () {
     var $line4 = $("<tr style='border: unset'></tr>");
     var $line5 = $("<tr style='border: unset'></tr>");
     $line3.html(pdfObject.pdfname);
-    $line4.html(pdfObject.holder);
-    $line5.html(pdfObject.accountNo);
+    $line4.html('Account Holder Name: ' + pdfObject.holder);
+    $line5.html('Account No.: ' + pdfObject.accountNo);
     $table3.append($line3);
     $table3.append($line4);
     $table3.append($line5);
     $table3.appendTo($("#dataPDF"));
+
+    var pdfdata1 = '{"holder":"LOREM IPSUM","accountNo":"XXXXXXXXXX"}';
+
+    var pdfObject1 = $.parseJSON(pdfdata1);
+
+    var $table4 = $("<table id='table3' style='top:50px;'></table>");
+    var $line7 = $("<tr style='border: unset'></tr>");
+    var $line8 = $("<tr style='border: unset'></tr>");
+    $line7.html('Account Holder Name: ' + pdfObject1.holder);
+    $line8.html('Account No.: ' + pdfObject1.accountNo);
+    $table4.append($line7);
+    $table4.append($line8);
+    $table4.appendTo($("#dataPDF1"));
     // var $pdf1 = $("<div></div>");
     // var pdfObject = $.parseJSON(pdfdata).pdfObject;
 
