@@ -34,28 +34,28 @@ function runDiv() {
         $('.rectangle10').css("background-color", "#e5e5e5");
     }, 4500);
 }
-var txt = '{"employees":[' +
-    '{"firstName":"John","lastName":"Doe" },' +
-    '{"firstName":"Anna","lastName":"Smith" },' +
-    '{"firstName":"Peter","lastName":"Jones" }]}';
+// var txt = '{"employees":[' +
+//     '{"firstName":"John","lastName":"Doe" },' +
+//     '{"firstName":"Anna","lastName":"Smith" },' +
+//     '{"firstName":"Peter","lastName":"Jones" }]}';
 
-// $.parseJSON will parse the txt (JSON) and convert it to an
-// JavaScript object. After its call, it gets the employees property
-// and sets it to the employees variable
-var employees = $.parseJSON(txt).employees;
+// // $.parseJSON will parse the txt (JSON) and convert it to an
+// // JavaScript object. After its call, it gets the employees property
+// // and sets it to the employees variable
+// var employees = $.parseJSON(txt).employees;
 
-var $table = $("<table></table>");
+// var $table = $("<table></table>");
 
-var indices = [1, 3];
+var indices = [1, 2];
 
-for (var i = 0; i < employees.length; i++) {
-    var emp = employees[i];
-    var $line = $("<tr class='pdfTable'></tr>");
-    $line.append($("<td class='pdfTable'></td>").html(emp.firstName));
-    $line.append($("<td class='pdfTable'></td>").html(emp.lastName));
-    $table.append($line);
-}
-$table.appendTo($("#myDiv"));
+// for (var i = 0; i < employees.length; i++) {
+//     var emp = employees[i];
+//     var $line = $("<tr class='pdfTable'></tr>");
+//     $line.append($("<td class='pdfTable'></td>").html(emp.firstName));
+//     $line.append($("<td class='pdfTable'></td>").html(emp.lastName));
+//     $table.append($line);
+// }
+// $table.appendTo($("#myDiv"));
 
 $(document).ready(function () {
     $('.collapsible').collapsible();
@@ -66,52 +66,54 @@ $(document).ready(function () {
     var myDiv = setInterval("runDiv()", 4500);
 
     var txt = '{"employees":[' +
-        '{"firstName":"John","lastName":"Doe", "age":"10", "age1":"10", "age2":"10" },' +
-        '{"firstName":"Anna","lastName":"Smith", "age":"10", "age1":"10", "age2":"10" },' +
-        '{"firstName":"Mike","lastName":"Blake", "age":"10", "age1":"10", "age2":"10" },' +
-        '{"firstName":"Peter","lastName":"Jones", "age":"10", "age1":"10", "age2":"10" }]}';
+        '{"date":"08/10/03","desc":"Previous Balance", "withdrawl":"", "deposit":"", "balance":"0.55" },' +
+        '{"date":"14/10/03","desc":"Payroll Deposit - HOTEL", "withdrawl":"", "deposit":"694.81", "balance":"695.36" },' +
+        '{"date":"14/10/03","desc":"Web Bill Payment", "withdrawl":"200", "deposit":"", "balance":"495.36" },' +
+        '{"date":"16/10/03","desc":"ATM Withdrawl", "withdrawl":"21.25", "deposit":"", "balance":"474.11" },' +
+        '{"date":"16/10/03","desc":"Fees", "withdrawl":"1.50", "deposit":"", "balance":"472.61" }]}';
 
     // $.parseJSON will parse the txt (JSON) and convert it to an
     // JavaScript object. After its call, it gets the employees property
     // and sets it to the employees variable
     var employees = $.parseJSON(txt).employees;
 
-    var $table = $("<table class='pdfTable' style='margin-top:50px;' id ='table1'></table>");
+    var $table = $("<table class='pdfTable tables' id ='table1'></table>");
 
     for (var i = 0; i < employees.length; i++) {
         var emp = employees[i];
         var $line = $("<tr></tr>");
-        $line.append($("<td class='date'></td>").html(emp.firstName));
-        $line.append($("<td class='description'></td>").html(emp.lastName));
-        $line.append($("<td class='withdrawl'></td>").html(emp.age));
-        $line.append($("<td class='deposit'></td>").html(emp.age1));
-        $line.append($("<td class='balance'></td>").html(emp.age2));
+        $line.append($("<td class='date'></td>").html(emp.date));
+        $line.append($("<td class='description'></td>").html(emp.desc));
+        $line.append($("<td class='withdrawl'></td>").html(emp.withdrawl));
+        $line.append($("<td class='deposit'></td>").html(emp.deposit));
+        $line.append($("<td class='balance'></td>").html(emp.balance));
         $table.append($line);
     }
     $table.appendTo($("#myDiv"));
     // $('div span:nth-child(2)').css("background-color", "#6c63ff");
 
     var txt1 = '{"employees1":[' +
-        '{"firstName":"John","lastName":"Doe", "age":"10", "age1":"10", "age2":"10" },' +
-        '{"firstName":"Anna","lastName":"Smith", "age":"10", "age1":"15", "age2":"15" },' +
-        '{"firstName":"Mike","lastName":"Blake", "age":"10", "age1":"10", "age2":"10" },' +
-        '{"firstName":"Peter","lastName":"Jones", "age":"10", "age1":"10", "age2":"15" }]}';
+        '{"date":"08/10/03","desc":"Previous Balance", "withdrawl":"", "deposit":"", "balance":"0.55" },' +
+        '{"date":"14/10/03","desc":"Payroll Deposit - HOTEL", "withdrawl":"", "deposit":"794.81", "balance":"795.36" },' +
+        '{"date":"14/10/03","desc":"Web Bill Payment", "withdrawl":"300", "deposit":"", "balance":"495.36" },' +
+        '{"date":"16/10/03","desc":"ATM Withdrawl", "withdrawl":"21.25", "deposit":"", "balance":"474.11" },' +
+        '{"date":"16/10/03","desc":"Fees", "withdrawl":"1.50", "deposit":"", "balance":"472.61" }]}';
 
     // $.parseJSON will parse the txt (JSON) and convert it to an
     // JavaScript object. After its call, it gets the employees property
     // and sets it to the employees variable
     var employees1 = $.parseJSON(txt1).employees1;
 
-    var $table1 = $("<table class='mongodbTable' style='margin-top:50px;' id='table2'></table>");
+    var $table1 = $("<table class='mongodbTable tables' id='table2'></table>");
 
     for (var i = 0; i < employees1.length; i++) {
         var emp1 = employees1[i];
         var $line1 = $("<tr></tr>");
-        $line1.append($("<td class='date'></td>").html(emp1.firstName));
-        $line1.append($("<td class='description'></td>").html(emp1.lastName));
-        $line1.append($("<td class='withdrawl'></td>").html(emp1.age));
-        $line1.append($("<td class='deposit'></td>").html(emp1.age1));
-        $line1.append($("<td class='balance'></td>").html(emp1.age2));
+        $line1.append($("<td class='date'></td>").html(emp1.date));
+        $line1.append($("<td class='description'></td>").html(emp1.desc));
+        $line1.append($("<td class='withdrawl'></td>").html(emp1.withdrawl));
+        $line1.append($("<td class='deposit'></td>").html(emp1.deposit));
+        $line1.append($("<td class='balance'></td>").html(emp1.balance));
         $table1.append($line1);
     }
     $table1.appendTo($("#myDiv1"));
@@ -120,6 +122,7 @@ $(document).ready(function () {
     var table2 = document.getElementById('table2');
     for (var i = 0; i < indices.length; i++) {
         table1.rows[indices[i]].style.background = "#E3242B";
+        // table1.rows[indices[i]].style.color = table2.rows[indices[i]].style.color = "#FFFFFF";
         table2.rows[indices[i]].style.background = "#508030";
     }
     // $('div span:nth-child(2)').css("background-color", "#6c63ff");

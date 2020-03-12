@@ -31,6 +31,10 @@ th {
     box-shadow: 0px 1px 4px #6C63FF;
 }
 
+.tables {
+    margin-top: 59px;
+}
+
 .pdfTable {
     position: absolute;
     width: 616px;
@@ -235,31 +239,50 @@ body {
     color: #000000;
 }
 
+.left-header {
+    border-top-left-radius: 10px;
+}
+
+.right-header {
+    border-top-right-radius: 10px;
+}
+
+.headers {
+    border-radius: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
 td {
     text-align: center;
 }
 
 .date {
+    font-weight: 600;
     width: 76px;
     align-items: center;
 }
 
 .description {
+    font-weight: 600;
     width: 219px;
     align-items: center;
 }
 
 .withdrawl {
+    font-weight: 600;
     width: 120px;
     align-items: center;
 }
 
 .deposit {
+    font-weight: 600;
     width: 101px;
     align-items: center;
 }
 
 .balance {
+    font-weight: 600;
     width: 99px;
     align-items: center;
 }
