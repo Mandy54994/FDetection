@@ -11,6 +11,31 @@ html {
     box-shadow: 0px 1px 4px #6C63FF;
 }
 
+.farzi {
+    position: absolute;
+    top: -16px;
+}
+
+.compare {
+    position: absolute;
+    width: 142px;
+    height: 35px;
+    left: 1155px;
+    top: 163px;
+    border-color: #6C63FF;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
 .brand-text {
     position: absolute;
     width: 165px;

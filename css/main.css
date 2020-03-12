@@ -1,3 +1,9 @@
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
 .page {
     width: 1366px;
     height: 1130px;
@@ -35,12 +41,115 @@ th {
     margin-top: 59px;
 }
 
+.pdf {
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    left: 63px;
+    top: 197px;
+}
+
+#dataPDF {
+    position: absolute;
+    width: 334px;
+    height: 55px;
+    left: 130px;
+    top: 198px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.from {
+    position: absolute;
+    width: 52px;
+    height: 22px;
+    left: 795px;
+    top: 144px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #000000;
+}
+
+.to {
+    position: absolute;
+    width: 52px;
+    height: 22px;
+    left: 975px;
+    top: 144px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #000000;
+}
+
+#fromDate {
+    position: absolute;
+    width: 140px;
+    height: 35px;
+    left: 795px;
+    top: 162px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+#toDate {
+    position: absolute;
+    width: 140px;
+    height: 35px;
+    left: 975px;
+    top: 162px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+.mongodb {
+    position: absolute;
+    width: 174px;
+    height: 56px;
+    left: 702px;
+    top: 197px;
+}
+
 .pdfTable {
     position: absolute;
     width: 616px;
     /* height: 348px; */
     left: 46px;
-    top: 267px;
+    top: 268px;
 
     background: #FFFFFF;
     box-sizing: border-box;

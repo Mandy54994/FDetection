@@ -45,6 +45,19 @@
         </nav>
     </div>
     <div class="CSecurity">Results:</div>
+    <form action="" method="POST" class="farzi">
+        <label for="fromDate" class="from">From:</label>
+        <input type="date" id="fromDate" name="fromDate"><br><br>
+        <label for="toDate" class="to">To:</label>
+        <input type="date" id="toDate" name="toDate"><br><br>
+        <button type="submit" class="waves-effect waves-light started compare"
+            style="color: white; font-weight: 500;">Compare
+            Again</button>
+    </form>
+    <img src="assets/pdf.png" alt="" class="pdf">
+    <div id="dataPDF">
+
+    </div>
     <div id="myDiv">
         <table class="pdfTable">
             <tr>
@@ -56,6 +69,7 @@
             </tr>
         </table>
     </div>
+    <img src="assets/mongodb.svg" alt="" class="mongodb">
     <div id="myDiv1">
         <table class="mongodbTable headers">
             <tr>
@@ -67,7 +81,10 @@
             </tr>
         </table>
     </div>
-    <div class="rectangle1" style="top: 875px;">
+    <div id="dataPDF">
+
+    </div>
+    <div class="rectangle1" style="top: 643px;">
         <div class="FDetection">FDetection</div>
         <div class="vom">View on map</div>
         <div id="map"></div>

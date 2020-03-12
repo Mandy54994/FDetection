@@ -1,5 +1,4 @@
 function runDot() {
-    console.log('running');
     setTimeout(function () {
         $('div span:nth-child(1)').css("background-color", "#6c63ff");
         $('div span:nth-child(2)').css("background-color", "#e5e5e5");
@@ -48,22 +47,15 @@ function runDiv() {
 
 var indices = [1, 2];
 
-// for (var i = 0; i < employees.length; i++) {
-//     var emp = employees[i];
-//     var $line = $("<tr class='pdfTable'></tr>");
-//     $line.append($("<td class='pdfTable'></td>").html(emp.firstName));
-//     $line.append($("<td class='pdfTable'></td>").html(emp.lastName));
-//     $table.append($line);
-// }
-// $table.appendTo($("#myDiv"));
-
 $(document).ready(function () {
     $('.collapsible').collapsible();
-    console.log("Ready!");
     runDot();
     runDiv();
     var myDOt = setInterval("runDot()", 4500);
     var myDiv = setInterval("runDiv()", 4500);
+
+    var mongodbdata = '{"mongoDbData":[' +
+        '{"holder":"LOREM IPSUM","accountNo":"XXXXXXXXXX"}]}';
 
     var txt = '{"employees":[' +
         '{"date":"08/10/03","desc":"Previous Balance", "withdrawl":"", "deposit":"", "balance":"0.55" },' +
@@ -122,8 +114,26 @@ $(document).ready(function () {
     var table2 = document.getElementById('table2');
     for (var i = 0; i < indices.length; i++) {
         table1.rows[indices[i]].style.background = "#E3242B";
-        // table1.rows[indices[i]].style.color = table2.rows[indices[i]].style.color = "#FFFFFF";
+        table1.rows[indices[i]].style.color = table2.rows[indices[i]].style.color = "#FFFFFF";
         table2.rows[indices[i]].style.background = "#508030";
     }
-    // $('div span:nth-child(2)').css("background-color", "#6c63ff");
+
+    var pdfdata = '{"pdfname":"Abc.pdf","holder":"LOREM IPSUM","accountNo":"XXXXXXXXXX"}';
+
+    var pdfObject = $.parseJSON(pdfdata);
+
+    var $table3 = $("<table id='table3' style='top:50px;'></table>");
+    var $line3 = $("<tr style='border: unset'></tr>");
+    var $line4 = $("<tr style='border: unset'></tr>");
+    var $line5 = $("<tr style='border: unset'></tr>");
+    $line3.html(pdfObject.pdfname);
+    $line4.html(pdfObject.holder);
+    $line5.html(pdfObject.accountNo);
+    $table3.append($line3);
+    $table3.append($line4);
+    $table3.append($line5);
+    $table3.appendTo($("#dataPDF"));
+    // var $pdf1 = $("<div></div>");
+    // var pdfObject = $.parseJSON(pdfdata).pdfObject;
+
 });
