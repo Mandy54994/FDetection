@@ -482,6 +482,113 @@ td {
     top: 100px;
 }
 
+.path {
+    position: absolute;
+    /* width: 296px;
+    height: 38px; */
+    left: 293px;
+    top: 4px;
+}
+
+.homeText {
+    position: absolute;
+    width: 653px;
+    height: 445px;
+    left: 655px;
+    top: 103px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.rectangle25 {
+    position: absolute;
+    width: 483px;
+    height: 160px;
+    left: 13px;
+    top: 60px;
+
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+.rectangle27 {
+    position: absolute;
+    width: 376px;
+    height: 118px;
+    left: 87px;
+    top: 22px;
+
+    background: #FFFFFF;
+    border: 2px solid rgba(108, 99, 255, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.filepath {
+    position: absolute;
+    width: 296px;
+    height: 38px;
+    left: 208px;
+    top: -48px;
+    background: rgba(196, 196, 196, 0.75);
+    opacity: 0.75;
+    border-radius: 5px;
+}
+
+.uploadPDF {
+    content: "Upload(.pdf)";
+    position: absolute;
+    width: 139px;
+    height: 33px;
+    left: 52px;
+    top: -48px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: #6C63FF;
+    border-radius: 3px;
+    color: #FFFFFF;
+}
+
+.rectangle28 {
+    position: absolute;
+    width: 189px;
+    height: 35px;
+    left: 9px;
+    top: 32px;
+    opacity: 1.0;
+    background: #6C63FF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+}
+
+.uploadPDFform {
+    position: absolute;
+    width: 527px;
+    height: 413px;
+    left: 85px;
+    top: 194px;
+
+    background: #e5e5e5;
+    opacity: 1.0;
+    border-radius: 20px;
+}
+
 .CSecurity {
     position: absolute;
     width: 223px;
