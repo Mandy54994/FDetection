@@ -4,6 +4,17 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     -webkit-appearance: none;
 }
 
+#demo {
+    margin: 14px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    color: rgba(0, 0, 0, 0.8);
+}
+
 .page {
     width: 1366px;
     height: 1130px;
