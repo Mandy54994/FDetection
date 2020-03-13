@@ -1,15 +1,17 @@
+var size, name;
+
 function runDot() {
-  setTimeout(function() {
+  setTimeout(function () {
     $("div span:nth-child(1)").css("background-color", "#6c63ff");
     $("div span:nth-child(2)").css("background-color", "#e5e5e5");
     $("div span:nth-child(3)").css("background-color", "#e5e5e5");
   }, 1500);
-  setTimeout(function() {
+  setTimeout(function () {
     $("div span:nth-child(2)").css("background-color", "#6c63ff");
     $("div span:nth-child(1)").css("background-color", "#e5e5e5");
     $("div span:nth-child(3)").css("background-color", "#e5e5e5");
   }, 3000);
-  setTimeout(function() {
+  setTimeout(function () {
     $("div span:nth-child(3)").css("background-color", "#6c63ff");
     $("div span:nth-child(2)").css("background-color", "#e5e5e5");
     $("div span:nth-child(1)").css("background-color", "#e5e5e5");
@@ -17,17 +19,17 @@ function runDot() {
 }
 
 function runDiv() {
-  setTimeout(function() {
+  setTimeout(function () {
     $(".rectangle10").css("background-color", "#6c63ff");
     $(".rectangle11").css("background-color", "#e5e5e5");
     $(".rectangle12").css("background-color", "#e5e5e5");
   }, 1500);
-  setTimeout(function() {
+  setTimeout(function () {
     $(".rectangle11").css("background-color", "#6c63ff");
     $(".rectangle10").css("background-color", "#e5e5e5");
     $(".rectangle12").css("background-color", "#e5e5e5");
   }, 3000);
-  setTimeout(function() {
+  setTimeout(function () {
     $(".rectangle12").css("background-color", "#6c63ff");
     $(".rectangle11").css("background-color", "#e5e5e5");
     $(".rectangle10").css("background-color", "#e5e5e5");
@@ -36,44 +38,52 @@ function runDiv() {
 
 function myFunction() {
   var x = document.getElementById("myFile");
-  var size = (x.files[0].size / 1024).toFixed(2);
-  var name = x.files[0].name;
+  size = (x.files[0].size / 1024).toFixed(2);
+  name = x.files[0].name;
   var demoP = document.getElementById("demo");
   demoP.innerHTML = name + "<br>(" + size + " KB)";
+  document.getElementById('comp').disabled = false;
+  document.getElementById('fromDate').disabled = false;
+  document.getElementById('toDate').disabled = false;
+
 }
 
 function readfiles(files) {
   for (var i = 0; i < files.length; i++) {
-    document.getElementById("fileDragName").value = files[i].name;
-    document.getElementById("fileDragSize").value = files[i].size;
-    document.getElementById("fileDragType").value = files[i].type;
+    name = files[i].name;
+    size = files[i].size;
     reader = new FileReader();
-    reader.onload = function(event) {
-      document.getElementById("fileDragData").value = event.target.result;
-    };
+    reader.onload = function (event) {};
     reader.readAsDataURL(files[i]);
   }
 }
 
-document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", function (event) {
   var holder = document.getElementById("holder");
-  holder.ondragover = function() {
+  holder.ondragover = function () {
     this.className = "hover";
     return false;
   };
-  holder.ondragend = function() {
+  holder.ondragend = function () {
     this.className = "";
     return false;
   };
-  holder.ondrop = function(e) {
-    this.className = "";
+  holder.ondrop = function (e) {
+    this.style.display = "none";
+    var done = document.getElementById('pdfUploaded');
+    done.style.display = "unset";
     e.preventDefault();
     readfiles(e.dataTransfer.files);
+    var demoP = document.getElementById("demo");
+    demoP.innerHTML = name + "<br>(" + size + " KB)";
+    document.getElementById('comp').disabled = false;
+    document.getElementById('fromDate').disabled = false;
+    document.getElementById('toDate').disabled = false;
   };
 });
 var indices = [1, 2];
 
-$(document).ready(function() {
+$(document).ready(function () {
   $(".collapsible").collapsible();
   runDot();
   runDiv();
