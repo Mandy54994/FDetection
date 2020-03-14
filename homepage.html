@@ -1,118 +1,170 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>FDetection</title>
     <link rel="icon" href="css/assets/intrusion.png" type="image/icon type" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <script src="main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="navbar-fixed">
-        <nav id="navigation-bar" style="background-color: white;">
-            <div class="navbar-fixed">
-                <a href="index.html" class="brand-logo"><img src="css/assets/logo.png" class="logo" />
-                    <div class="brand-text">FDetection</div>
-                </a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="index.html" class="home">Home</a></li>
-                    <li><a href="AboutUs.html" class="about-us">About Us</a></li>
-                    <li><a href="collapsible.html" class="bank">Bank Partners</a></li>
-                    <li>
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"
-                            style="padding-top: 7px; margin-right: 5px">
-                            <path
-                                d="M20 0C8.97219 0 0 8.97219 0 20C0 31.0278 8.97219 40 20 40C31.0278 40 40 31.0278 40 20C40 8.97219 31.0278 0 20 0ZM20 5.83336C25.284 5.83336 29.5834 10.1327 29.5834 15.4167C29.5834 20.7008 25.284 25 20 25C14.716 25 10.4166 20.7007 10.4166 15.4166C10.4166 10.1326 14.716 5.83336 20 5.83336ZM20 36.6666C14.5541 36.6666 9.725 34.0295 6.6818 29.978C10.0159 28.3737 14.7772 26.6666 20 26.6666C25.2232 26.6666 29.9849 28.374 33.3183 29.9778C30.2751 34.0295 25.4459 36.6666 20 36.6666Z"
-                                fill="#6C63FF" />
-                        </svg>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+      <nav id="navigation-bar" style="background-color: white;">
+        <div class="navbar-fixed">
+          <a href="index.html" class="brand-logo"
+            ><img src="css/assets/logo.png" class="logo" />
+            <div class="brand-text">FDetection</div>
+          </a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+            ><i class="material-icons">menu</i></a
+          >
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html" class="home">Home</a></li>
+            <li><a href="AboutUs.html" class="about-us">About Us</a></li>
+            <li><a href="collapsible.html" class="bank">Bank Partners</a></li>
+            <li>
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                style="padding-top: 7px; margin-right: 5px"
+              >
+                <path
+                  d="M20 0C8.97219 0 0 8.97219 0 20C0 31.0278 8.97219 40 20 40C31.0278 40 40 31.0278 40 20C40 8.97219 31.0278 0 20 0ZM20 5.83336C25.284 5.83336 29.5834 10.1327 29.5834 15.4167C29.5834 20.7008 25.284 25 20 25C14.716 25 10.4166 20.7007 10.4166 15.4166C10.4166 10.1326 14.716 5.83336 20 5.83336ZM20 36.6666C14.5541 36.6666 9.725 34.0295 6.6818 29.978C10.0159 28.3737 14.7772 26.6666 20 26.6666C25.2232 26.6666 29.9849 28.374 33.3183 29.9778C30.2751 34.0295 25.4459 36.6666 20 36.6666Z"
+                  fill="#6C63FF"
+                />
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
     <div class="CSecurity" style="width: 460px; left:52px;">
-        Compare with Bank:
+      Compare with Bank:
     </div>
     <form action="POST" class="uploadPDFform">
-        <div class="rectangle28">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
-                style="margin-left: 16px; margin-top:8px; ">
-                <g clip-path="url(#clip0)">
-                    <path
-                        d="M14.5291 8.65784V4.87289C14.5291 4.76456 14.4791 4.66446 14.4083 4.58527L10.1648 0.129242C10.0856 0.0459289 9.97299 0 9.86053 0H3.13263C1.89056 0 0.898438 1.01288 0.898438 2.2551V14.9771C0.898438 16.2193 1.89056 17.2156 3.13263 17.2156H8.4433C9.44778 18.8829 11.2737 20 13.3536 20C16.5132 20 19.0935 17.4323 19.0935 14.2685C19.0977 11.5048 17.1135 9.19556 14.5291 8.65784ZM10.2774 1.46317L13.1244 4.46014H11.2778C10.7275 4.46014 10.2774 4.00589 10.2774 3.45566V1.46317ZM3.13263 16.3818C2.35321 16.3818 1.73218 15.7565 1.73218 14.9771V2.2551C1.73218 1.47141 2.35321 0.83374 3.13263 0.83374H9.44366V3.45566C9.44366 4.46854 10.2649 5.29388 11.2778 5.29388H13.6954V8.54935C13.5704 8.54523 13.4703 8.53271 13.362 8.53271C11.9072 8.53271 10.5692 9.09134 9.56039 9.96674H4.26651C4.03717 9.96674 3.84964 10.1543 3.84964 10.3835C3.84964 10.6128 4.03717 10.8003 4.26651 10.8003H8.7851C8.48907 11.2172 8.2431 11.6341 8.05145 12.0926H4.26651C4.03717 12.0926 3.84964 12.2801 3.84964 12.5095C3.84964 12.7386 4.03717 12.9263 4.26651 12.9263H7.78046C7.67624 13.3432 7.62207 13.8058 7.62207 14.2685C7.62207 15.0188 7.76794 15.7608 8.03055 16.3861H3.13263V16.3818ZM13.3578 19.1705C10.6567 19.1705 8.45993 16.9737 8.45993 14.2726C8.45993 11.5715 10.6525 9.37469 13.3578 9.37469C16.0631 9.37469 18.2556 11.5715 18.2556 14.2726C18.2556 16.9737 16.059 19.1705 13.3578 19.1705Z"
-                        fill="white" />
-                    <path
-                        d="M4.26648 8.71201H8.48904C8.71838 8.71201 8.90591 8.52432 8.90591 8.29514C8.90591 8.0658 8.71838 7.87827 8.48904 7.87827H4.26648C4.03714 7.87827 3.84961 8.0658 3.84961 8.29514C3.84961 8.52432 4.03714 8.71201 4.26648 8.71201Z"
-                        fill="white" />
-                    <path
-                        d="M13.6538 11.1963C13.5746 11.113 13.4663 11.0629 13.3496 11.0629C13.2328 11.0629 13.1245 11.113 13.0453 11.1963L10.6025 13.8182C10.4441 13.985 10.4567 14.2517 10.6234 14.406C10.7902 14.5644 11.0611 14.5518 11.2194 14.3852L12.9452 12.5386V17.0905C12.9452 17.3198 13.1327 17.5073 13.3621 17.5073C13.5913 17.5073 13.7789 17.3198 13.7789 17.0905V12.5386L15.492 14.3852C15.5755 14.4727 15.6838 14.5186 15.7965 14.5186C15.8964 14.5186 15.9965 14.481 16.0798 14.406C16.2466 14.2476 16.2591 13.985 16.1007 13.8182L13.6538 11.1963Z"
-                        fill="white" />
-                </g>
-                <defs>
-                    <clipPath id="clip0">
-                        <rect width="20" height="20" fill="white" />
-                    </clipPath>
-                </defs>
-            </svg>
+      <div class="rectangle28">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          style="margin-left: 16px; margin-top:8px; "
+        >
+          <g clip-path="url(#clip0)">
+            <path
+              d="M14.5291 8.65784V4.87289C14.5291 4.76456 14.4791 4.66446 14.4083 4.58527L10.1648 0.129242C10.0856 0.0459289 9.97299 0 9.86053 0H3.13263C1.89056 0 0.898438 1.01288 0.898438 2.2551V14.9771C0.898438 16.2193 1.89056 17.2156 3.13263 17.2156H8.4433C9.44778 18.8829 11.2737 20 13.3536 20C16.5132 20 19.0935 17.4323 19.0935 14.2685C19.0977 11.5048 17.1135 9.19556 14.5291 8.65784ZM10.2774 1.46317L13.1244 4.46014H11.2778C10.7275 4.46014 10.2774 4.00589 10.2774 3.45566V1.46317ZM3.13263 16.3818C2.35321 16.3818 1.73218 15.7565 1.73218 14.9771V2.2551C1.73218 1.47141 2.35321 0.83374 3.13263 0.83374H9.44366V3.45566C9.44366 4.46854 10.2649 5.29388 11.2778 5.29388H13.6954V8.54935C13.5704 8.54523 13.4703 8.53271 13.362 8.53271C11.9072 8.53271 10.5692 9.09134 9.56039 9.96674H4.26651C4.03717 9.96674 3.84964 10.1543 3.84964 10.3835C3.84964 10.6128 4.03717 10.8003 4.26651 10.8003H8.7851C8.48907 11.2172 8.2431 11.6341 8.05145 12.0926H4.26651C4.03717 12.0926 3.84964 12.2801 3.84964 12.5095C3.84964 12.7386 4.03717 12.9263 4.26651 12.9263H7.78046C7.67624 13.3432 7.62207 13.8058 7.62207 14.2685C7.62207 15.0188 7.76794 15.7608 8.03055 16.3861H3.13263V16.3818ZM13.3578 19.1705C10.6567 19.1705 8.45993 16.9737 8.45993 14.2726C8.45993 11.5715 10.6525 9.37469 13.3578 9.37469C16.0631 9.37469 18.2556 11.5715 18.2556 14.2726C18.2556 16.9737 16.059 19.1705 13.3578 19.1705Z"
+              fill="white"
+            />
+            <path
+              d="M4.26648 8.71201H8.48904C8.71838 8.71201 8.90591 8.52432 8.90591 8.29514C8.90591 8.0658 8.71838 7.87827 8.48904 7.87827H4.26648C4.03714 7.87827 3.84961 8.0658 3.84961 8.29514C3.84961 8.52432 4.03714 8.71201 4.26648 8.71201Z"
+              fill="white"
+            />
+            <path
+              d="M13.6538 11.1963C13.5746 11.113 13.4663 11.0629 13.3496 11.0629C13.2328 11.0629 13.1245 11.113 13.0453 11.1963L10.6025 13.8182C10.4441 13.985 10.4567 14.2517 10.6234 14.406C10.7902 14.5644 11.0611 14.5518 11.2194 14.3852L12.9452 12.5386V17.0905C12.9452 17.3198 13.1327 17.5073 13.3621 17.5073C13.5913 17.5073 13.7789 17.3198 13.7789 17.0905V12.5386L15.492 14.3852C15.5755 14.4727 15.6838 14.5186 15.7965 14.5186C15.8964 14.5186 15.9965 14.481 16.0798 14.406C16.2466 14.2476 16.2591 13.985 16.1007 13.8182L13.6538 11.1963Z"
+              fill="white"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0">
+              <rect width="20" height="20" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
 
-            <hr style="position: absolute;
+        <hr
+          style="position: absolute;
             width: 29.13px;
             height: 0px;
             left: 33.5px;
             top: 8px;
             
             border: 2px solid #FFFFFF;
-            transform: rotate(-90deg);" />
-            <div class="file-field input-field">
-                <div class="uploadPDF">
-                    <span style="margin-left: 6px;">Upload(.pdf)</span>
-                    <input type="file" name="upload" accept="application/pdf" id="myFile" onchange="myFunction()" />
-                </div>
-                <div class="file-path-wrapper filepath">
-                    <input id="filenameHolder' class=" file-path validate" style="margin-top: -4px;" type="text"
-                        disabled />
-                </div>
+            transform: rotate(-90deg);"
+        />
+        <div class="file-field input-field">
+          <div class="uploadPDF">
+            <span style="margin-left: 6px;">Upload(.pdf)</span>
+            <input
+              type="file"
+              name="upload"
+              accept="application/pdf"
+              id="myFile"
+              onchange="myFunction()"
+            />
+          </div>
+          <div class="file-path-wrapper filepath">
+            <input id="filenameHolder' class=" file-path validate"
+            style="margin-top: -4px;" type="text" disabled />
+          </div>
+        </div>
+        <div class="rectangle25">
+          <div id="holder" class="holder">
+            <span id="pdfNot">Drag & <br />Drop File.</span>
+            <img
+              src="assets/undraw_add_file2_gvbb.png"
+              style="height: 150px; width:
+            150px; left: 325px; top:8px; position: absolute;"
+            />
+          </div>
+          <div id="pdfUploaded" style="display:none;">
+            <svg
+              width="56"
+              height="56"
+              viewBox="0 0 56 56"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              style="margin-top:30px; margin-left:21px;"
+            >
+              <path
+                d="M36.985 0H7.963C7.155 0 6.5 0.655 6.5 1.926V55C6.5 55.345 7.155 56 7.963 56H48.037C48.845 56 49.5 55.345 49.5 55V12.978C49.5 12.282 49.407 12.058 49.243 11.893L37.607 0.257C37.442 0.093 37.218 0 36.985 0Z"
+                fill="#E9E9E0"
+              />
+              <path
+                d="M37.5 0.151001V12H49.349L37.5 0.151001Z"
+                fill="#D9D7CA"
+              />
+              <path
+                d="M19.5142 33.324C19.1662 33.324 18.8322 33.211 18.5472 32.998C17.5062 32.217 17.3662 31.348 17.4322 30.756C17.6142 29.128 19.6272 27.424 23.4172 25.688C24.9212 22.392 26.3522 18.331 27.2052 14.938C26.2072 12.766 25.2372 9.948 25.9442 8.295C26.1922 7.716 26.5012 7.272 27.0782 7.08C27.3062 7.004 27.8822 6.908 28.0942 6.908C28.5982 6.908 29.0412 7.557 29.3552 7.957C29.6502 8.333 30.3192 9.13 28.9822 14.759C30.3302 17.543 32.2402 20.379 34.0702 22.321C35.3812 22.084 36.5092 21.963 37.4282 21.963C38.9942 21.963 39.9432 22.328 40.3302 23.08C40.6502 23.702 40.5192 24.429 39.9402 25.24C39.3832 26.019 38.6152 26.431 37.7202 26.431C36.5042 26.431 35.0882 25.663 33.5092 24.146C30.6722 24.739 27.3592 25.797 24.6812 26.968C23.8452 28.742 23.0442 30.171 22.2982 31.219C21.2732 32.654 20.3892 33.324 19.5142 33.324ZM22.1762 28.198C20.0392 29.399 19.1682 30.386 19.1052 30.942C19.0952 31.034 19.0682 31.276 19.5362 31.634C19.6852 31.587 20.5552 31.19 22.1762 28.198ZM35.8132 23.756C36.6282 24.383 36.8272 24.7 37.3602 24.7C37.5942 24.7 38.2612 24.69 38.5702 24.259C38.7192 24.05 38.7772 23.916 38.8002 23.844C38.6772 23.779 38.5142 23.647 37.6252 23.647C37.1202 23.648 36.4852 23.67 35.8132 23.756ZM28.3432 17.174C27.6282 19.648 26.6842 22.319 25.6692 24.738C27.7592 23.927 30.0312 23.219 32.1652 22.718C30.8152 21.15 29.4662 19.192 28.3432 17.174ZM27.7362 8.712C27.6382 8.745 26.4062 10.469 27.8322 11.928C28.7812 9.81301 27.7792 8.698 27.7362 8.712Z"
+                fill="#CC4B4C"
+              />
+              <path
+                d="M48.037 56H7.963C7.155 56 6.5 55.345 6.5 54.537V39H49.5V54.537C49.5 55.345 48.845 56 48.037 56Z"
+                fill="#CC4B4C"
+              />
+              <path
+                d="M17.3851 53H15.7441V42.924H18.6421C19.0701 42.924 19.4941 42.992 19.9131 43.129C20.3321 43.266 20.7081 43.471 21.0411 43.744C21.3741 44.017 21.6431 44.348 21.8481 44.735C22.0531 45.122 22.1561 45.557 22.1561 46.041C22.1561 46.552 22.0691 47.014 21.8961 47.429C21.7231 47.844 21.4811 48.193 21.1711 48.475C20.8611 48.757 20.4871 48.976 20.0501 49.131C19.6131 49.286 19.1291 49.363 18.6011 49.363H17.3841V53H17.3851ZM17.3851 44.168V48.16H18.8891C19.0891 48.16 19.2871 48.126 19.4841 48.057C19.6801 47.989 19.8601 47.877 20.0241 47.722C20.1881 47.567 20.3201 47.351 20.4201 47.073C20.5201 46.795 20.5701 46.451 20.5701 46.041C20.5701 45.877 20.5471 45.687 20.5021 45.474C20.4561 45.26 20.3631 45.055 20.2221 44.859C20.0801 44.663 19.8821 44.499 19.6271 44.367C19.3721 44.235 19.0341 44.169 18.6151 44.169H17.3851V44.168Z"
+                fill="white"
+              />
+              <path
+                d="M32.219 47.682C32.219 48.511 32.13 49.22 31.952 49.808C31.774 50.396 31.549 50.888 31.275 51.285C31.001 51.682 30.694 51.994 30.352 52.222C30.01 52.45 29.68 52.62 29.361 52.735C29.042 52.849 28.75 52.922 28.486 52.954C28.222 52.984 28.026 53 27.898 53H24.084V42.924H27.119C27.967 42.924 28.712 43.059 29.354 43.327C29.996 43.595 30.53 43.954 30.954 44.4C31.378 44.846 31.694 45.355 31.904 45.924C32.114 46.494 32.219 47.08 32.219 47.682ZM27.352 51.797C28.464 51.797 29.266 51.442 29.758 50.731C30.25 50.02 30.496 48.99 30.496 47.641C30.496 47.222 30.446 46.807 30.346 46.397C30.245 45.987 30.052 45.616 29.765 45.283C29.478 44.95 29.088 44.681 28.596 44.476C28.104 44.271 27.466 44.168 26.682 44.168H25.725V51.797H27.352Z"
+                fill="white"
+              />
+              <path
+                d="M36.2661 44.168V47.34H40.4771V48.461H36.2661V53H34.5981V42.924H40.9001V44.168H36.2661Z"
+                fill="white"
+              />
+            </svg>
+            <div class="rectangle27">
+              <p id="demo"></p>
             </div>
-            <div class="rectangle25">
-                <div id="holder" class="holder">
-                    <span id="pdfNot">Drag & <br />Drop File.</span>
-                    <img src="assets/undraw_add_file2_gvbb.png" style="height: 150px; width:
-            150px; left: 325px; top:8px; position: absolute;" />
-                </div>
-                <div id="pdfUploaded" style="display:none;">
-                    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg"
-                        style="margin-top:30px; margin-left:21px;">
-                        <path
-                            d="M36.985 0H7.963C7.155 0 6.5 0.655 6.5 1.926V55C6.5 55.345 7.155 56 7.963 56H48.037C48.845 56 49.5 55.345 49.5 55V12.978C49.5 12.282 49.407 12.058 49.243 11.893L37.607 0.257C37.442 0.093 37.218 0 36.985 0Z"
-                            fill="#E9E9E0" />
-                        <path d="M37.5 0.151001V12H49.349L37.5 0.151001Z" fill="#D9D7CA" />
-                        <path
-                            d="M19.5142 33.324C19.1662 33.324 18.8322 33.211 18.5472 32.998C17.5062 32.217 17.3662 31.348 17.4322 30.756C17.6142 29.128 19.6272 27.424 23.4172 25.688C24.9212 22.392 26.3522 18.331 27.2052 14.938C26.2072 12.766 25.2372 9.948 25.9442 8.295C26.1922 7.716 26.5012 7.272 27.0782 7.08C27.3062 7.004 27.8822 6.908 28.0942 6.908C28.5982 6.908 29.0412 7.557 29.3552 7.957C29.6502 8.333 30.3192 9.13 28.9822 14.759C30.3302 17.543 32.2402 20.379 34.0702 22.321C35.3812 22.084 36.5092 21.963 37.4282 21.963C38.9942 21.963 39.9432 22.328 40.3302 23.08C40.6502 23.702 40.5192 24.429 39.9402 25.24C39.3832 26.019 38.6152 26.431 37.7202 26.431C36.5042 26.431 35.0882 25.663 33.5092 24.146C30.6722 24.739 27.3592 25.797 24.6812 26.968C23.8452 28.742 23.0442 30.171 22.2982 31.219C21.2732 32.654 20.3892 33.324 19.5142 33.324ZM22.1762 28.198C20.0392 29.399 19.1682 30.386 19.1052 30.942C19.0952 31.034 19.0682 31.276 19.5362 31.634C19.6852 31.587 20.5552 31.19 22.1762 28.198ZM35.8132 23.756C36.6282 24.383 36.8272 24.7 37.3602 24.7C37.5942 24.7 38.2612 24.69 38.5702 24.259C38.7192 24.05 38.7772 23.916 38.8002 23.844C38.6772 23.779 38.5142 23.647 37.6252 23.647C37.1202 23.648 36.4852 23.67 35.8132 23.756ZM28.3432 17.174C27.6282 19.648 26.6842 22.319 25.6692 24.738C27.7592 23.927 30.0312 23.219 32.1652 22.718C30.8152 21.15 29.4662 19.192 28.3432 17.174ZM27.7362 8.712C27.6382 8.745 26.4062 10.469 27.8322 11.928C28.7812 9.81301 27.7792 8.698 27.7362 8.712Z"
-                            fill="#CC4B4C" />
-                        <path
-                            d="M48.037 56H7.963C7.155 56 6.5 55.345 6.5 54.537V39H49.5V54.537C49.5 55.345 48.845 56 48.037 56Z"
-                            fill="#CC4B4C" />
-                        <path
-                            d="M17.3851 53H15.7441V42.924H18.6421C19.0701 42.924 19.4941 42.992 19.9131 43.129C20.3321 43.266 20.7081 43.471 21.0411 43.744C21.3741 44.017 21.6431 44.348 21.8481 44.735C22.0531 45.122 22.1561 45.557 22.1561 46.041C22.1561 46.552 22.0691 47.014 21.8961 47.429C21.7231 47.844 21.4811 48.193 21.1711 48.475C20.8611 48.757 20.4871 48.976 20.0501 49.131C19.6131 49.286 19.1291 49.363 18.6011 49.363H17.3841V53H17.3851ZM17.3851 44.168V48.16H18.8891C19.0891 48.16 19.2871 48.126 19.4841 48.057C19.6801 47.989 19.8601 47.877 20.0241 47.722C20.1881 47.567 20.3201 47.351 20.4201 47.073C20.5201 46.795 20.5701 46.451 20.5701 46.041C20.5701 45.877 20.5471 45.687 20.5021 45.474C20.4561 45.26 20.3631 45.055 20.2221 44.859C20.0801 44.663 19.8821 44.499 19.6271 44.367C19.3721 44.235 19.0341 44.169 18.6151 44.169H17.3851V44.168Z"
-                            fill="white" />
-                        <path
-                            d="M32.219 47.682C32.219 48.511 32.13 49.22 31.952 49.808C31.774 50.396 31.549 50.888 31.275 51.285C31.001 51.682 30.694 51.994 30.352 52.222C30.01 52.45 29.68 52.62 29.361 52.735C29.042 52.849 28.75 52.922 28.486 52.954C28.222 52.984 28.026 53 27.898 53H24.084V42.924H27.119C27.967 42.924 28.712 43.059 29.354 43.327C29.996 43.595 30.53 43.954 30.954 44.4C31.378 44.846 31.694 45.355 31.904 45.924C32.114 46.494 32.219 47.08 32.219 47.682ZM27.352 51.797C28.464 51.797 29.266 51.442 29.758 50.731C30.25 50.02 30.496 48.99 30.496 47.641C30.496 47.222 30.446 46.807 30.346 46.397C30.245 45.987 30.052 45.616 29.765 45.283C29.478 44.95 29.088 44.681 28.596 44.476C28.104 44.271 27.466 44.168 26.682 44.168H25.725V51.797H27.352Z"
-                            fill="white" />
-                        <path d="M36.2661 44.168V47.34H40.4771V48.461H36.2661V53H34.5981V42.924H40.9001V44.168H36.2661Z"
-                            fill="white" />
-                    </svg>
-                    <div class="rectangle27">
-                        <p id="demo"></p>
-                    </div>
-                    <span style="position: absolute;
+            <span
+              style="position: absolute;
                 width: 479px;
                 height: 43px;
                 left: 0px;
@@ -124,61 +176,112 @@
                 font-size: 16px;
                 line-height: 20px;
                 
-                color: #FF0033;">* This will allow us to read from the PDF Document you
-                        uploaded!</span>
-                </div>
-            </div>
+                color: #FF0033;"
+              >* This will allow us to read from the PDF Document you
+              uploaded!</span
+            >
+          </div>
         </div>
+      </div>
 
-        <label for="fromDate" class="from" style="top: 298px; left: 108px;">From:</label>
-        <input type="date" id="fromDate" name="fromDate" style="top: 318px; left: 108px;background: #FFFFFF;
+      <label for="fromDate" class="from" style="top: 298px; left: 108px;"
+        >From:</label
+      >
+      <input
+        type="date"
+        id="fromDate"
+        name="fromDate"
+        style="top: 318px; left: 108px;background: #FFFFFF;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 5px;" disabled /><br /><br />
-        <label for="toDate" class="to" style="top: 298px; left: 288px;">To:</label>
-        <input type="date" id="toDate" name="toDate" style="top: 318px; left: 288px;background: #FFFFFF;
+        border-radius: 5px;"
+        disabled
+      /><br /><br />
+      <label for="toDate" class="to" style="top: 298px; left: 288px;"
+        >To:</label
+      >
+      <input
+        type="date"
+        id="toDate"
+        name="toDate"
+        style="top: 318px; left: 288px;background: #FFFFFF;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 5px;" disabled /><br /><br />
-        <button type="submit" id="comp" class="waves-effect waves-light started compare" style="color: white; font-weight: 500;top: 279px; left: 198px; width: 139px;
+        border-radius: 5px;"
+        disabled
+      /><br /><br />
+      <button
+        type="submit"
+        id="comp"
+        class="waves-effect waves-light started compare"
+        style="color: white; font-weight: 500;top: 279px; left: 198px; width: 139px;
             height: 35px;background: #6C63FF;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 3px; border-style: unset;" disabled>
-            Submit
-        </button>
+border-radius: 3px; border-style: unset;"
+        disabled
+      >
+        Submit
+      </button>
     </form>
     <div class="homeText">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        Lorem Ipsum has been the industry's standard dummy text ever since the
-        1500s, when an unknown printer took a galley of type and scrambled it to
-        make a type specimen book. It has survived not only five centuries, but
-        also the leap into electronic typesetting, remaining essentially
-        unchanged. It was popularised in the 1960s with the release of Letraset
-        sheets containing Lorem Ipsum passages, and more recently with desktop
-        publishing software like Aldus PageMaker including versions of Lorem
-        Ipsum.
-        <br />
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        Lorem Ipsum has been the industry's standard dummy text ever since the
-        1500s, when an unknown printer took a galley of type and scrambled it to
-        make a type specimen book.
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book. It has survived not only five centuries, but
+      also the leap into electronic typesetting, remaining essentially
+      unchanged. It was popularised in the 1960s with the release of Letraset
+      sheets containing Lorem Ipsum passages, and more recently with desktop
+      publishing software like Aldus PageMaker including versions of Lorem
+      Ipsum.
+      <br />
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book.
     </div>
-    <div class="rectangle1" style="top: 643px;">
-        <div class="FDetection">FDetection</div>
-        <div class="vom">View on map</div>
-        <div id="map"></div>
-        <a class="aboutUs social" href="AboutUs.html">About Us</a>
-        <a class="bankPartners social" href="#">Bank Partners</a>
-        <a class="contactUs social " href="ContactUs.html">Contact Us</a>
-        <div class="followUs social">Follow Us</div>
-        <a><img src="assets/facebook.png" alt="" class="socialMedia" style="left: 119px;" /></a>
-        <a><img src="assets/instagram-sketched.png" alt="" class="socialMedia" style="left: 169px;" /></a>
-        <a><img src="assets/linkedin.png" alt="" class="socialMedia" style="left: 219px;" /></a>
-        <a><img src="assets/twitter.png" alt="" class="socialMedia" style="left: 269px;" /></a>
-        <hr class="hr2" />
-        <div class="copyright">
-            <img src="css/assets/copyright-guidelines.png" alt="" class="copyrightI" />
-            Copyright 2020 by Internal ATCI
-        </div>
+    <div class="rectangle1 row" style="top: 643px;">
+      <div class="FDetection">FDetection</div>
+      <div class="vom">View on map</div>
+      <div id="map"></div>
+      <a class="aboutUs social" href="AboutUs.html">About Us</a>
+      <a class="bankPartners social" href="#">Bank Partners</a>
+      <a class="contactUs social " href="ContactUs.html">Contact Us</a>
+      <div class="followUs social">Follow Us</div>
+      <a
+        ><img
+          src="assets/facebook.png"
+          alt=""
+          class="socialMedia"
+          style="left: 119px;"
+      /></a>
+      <a
+        ><img
+          src="assets/instagram-sketched.png"
+          alt=""
+          class="socialMedia"
+          style="left: 169px;"
+      /></a>
+      <a
+        ><img
+          src="assets/linkedin.png"
+          alt=""
+          class="socialMedia"
+          style="left: 219px;"
+      /></a>
+      <a
+        ><img
+          src="assets/twitter.png"
+          alt=""
+          class="socialMedia"
+          style="left: 269px;"
+      /></a>
+      <hr class="hr2" />
+      <div class="copyright">
+        <img
+          src="css/assets/copyright-guidelines.png"
+          alt=""
+          class="copyrightI"
+        />
+        Copyright 2020 by Internal ATCI
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
