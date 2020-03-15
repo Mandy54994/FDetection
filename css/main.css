@@ -593,11 +593,13 @@ input[type=checkbox]:checked {
     left: 28px;
     top: 141px;
     padding-left: 10px;
+    border-style: unset;
 
     background: rgba(108, 99, 255, 0.8);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
 }
+
 
 .signin-container {
     position: absolute;
