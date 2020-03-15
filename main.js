@@ -48,6 +48,14 @@ function myFunction() {
 
 }
 
+function validatePassword() {
+  if (password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Passwords Don't Match");
+  } else {
+    confirm_password.setCustomValidity('');
+  }
+}
+
 function readfiles(files) {
   for (var i = 0; i < files.length; i++) {
     name = files[i].name;
@@ -56,6 +64,15 @@ function readfiles(files) {
     reader.onload = function (event) {};
     reader.readAsDataURL(files[i]);
   }
+}
+
+function checkForm(form) {
+  if (!form.terms.checked) {
+    alert("Please indicate that you accept the Terms and Conditions");
+    form.terms.focus();
+    return false;
+  }
+  return true;
 }
 
 document.addEventListener("DOMContentLoaded", function (event) {
@@ -80,6 +97,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
     document.getElementById('fromDate').disabled = false;
     document.getElementById('toDate').disabled = false;
   };
+  var password = document.getElementById("password"),
+    confirm_password = document.getElementById("confirm_password");
 });
 var indices = [1, 2];
 
