@@ -37,15 +37,17 @@ function runDiv() {
 }
 
 function myFunction() {
+  document.getElementById("holder").style.display="none";
+  document.getElementById("pdfUploaded").style.display="block";
   var x = document.getElementById("myFile");
   size = (x.files[0].size / 1024).toFixed(2);
   name = x.files[0].name;
   var demoP = document.getElementById("demo");
+  console.log("hello");
   demoP.innerHTML = name + "<br>(" + size + " KB)";
   document.getElementById('comp').disabled = false;
   document.getElementById('fromDate').disabled = false;
   document.getElementById('toDate').disabled = false;
-
 }
 
 function validatePassword() {
@@ -93,6 +95,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     readfiles(e.dataTransfer.files);
     var demoP = document.getElementById("demo");
     demoP.innerHTML = name + "<br>(" + size + " KB)";
+    document.getElementById("filenameHolder").value=name;
     document.getElementById('comp').disabled = false;
     document.getElementById('fromDate').disabled = false;
     document.getElementById('toDate').disabled = false;
