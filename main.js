@@ -2,19 +2,19 @@ var size, name;
 
 function runDot() {
   setTimeout(function () {
-    $("div span:nth-child(1)").css("background-color", "#6c63ff");
-    $("div span:nth-child(2)").css("background-color", "#e5e5e5");
-    $("div span:nth-child(3)").css("background-color", "#e5e5e5");
+    $("#dot1").css("background-color", "#6c63ff");
+    $("#dot2").css("background-color", "#e5e5e5");
+    $("#dot3").css("background-color", "#e5e5e5");
   }, 1500);
   setTimeout(function () {
-    $("div span:nth-child(2)").css("background-color", "#6c63ff");
-    $("div span:nth-child(1)").css("background-color", "#e5e5e5");
-    $("div span:nth-child(3)").css("background-color", "#e5e5e5");
+    $("#dot2").css("background-color", "#6c63ff");
+    $("#dot1").css("background-color", "#e5e5e5");
+    $("#dot3").css("background-color", "#e5e5e5");
   }, 3000);
   setTimeout(function () {
-    $("div span:nth-child(3)").css("background-color", "#6c63ff");
-    $("div span:nth-child(2)").css("background-color", "#e5e5e5");
-    $("div span:nth-child(1)").css("background-color", "#e5e5e5");
+    $("#dot3").css("background-color", "#6c63ff");
+    $("#dot2").css("background-color", "#e5e5e5");
+    $("#dot1").css("background-color", "#e5e5e5");
   }, 4500);
 }
 
@@ -40,11 +40,19 @@ function myFunction() {
   document.getElementById("holder").style.display="none";
   document.getElementById("pdfUploaded").style.display="block";
   var x = document.getElementById("myFile");
-  size = (x.files[0].size / 1024).toFixed(2);
+  size = x.files[0].size;
   name = x.files[0].name;
   var demoP = document.getElementById("demo");
-  console.log("hello");
-  demoP.innerHTML = name + "<br>(" + size + " KB)";
+  console.log(x.files[0]);
+  if(size<=1024)
+  demoP.innerHTML = name + "<br>(" + size + " B)";
+  else if(size<=1048576){
+    size=(size/1024).toFixed(2);
+    demoP.innerHTML = name + "<br>(" + size + " KB)";
+  }else{
+    size=(size/1048576).toFixed(2);
+    demoP.innerHTML = name + "<br>(" + size + " MB)";
+  }
   document.getElementById('comp').disabled = false;
   document.getElementById('fromDate').disabled = false;
   document.getElementById('toDate').disabled = false;
@@ -93,8 +101,18 @@ document.addEventListener("DOMContentLoaded", function (event) {
     done.style.display = "unset";
     e.preventDefault();
     readfiles(e.dataTransfer.files);
+    //e.originalEvent.dataTransfer.files;
+    console.log(e.dataTransfer.files[0]);
     var demoP = document.getElementById("demo");
+    if(size<=1024)
+    demoP.innerHTML = name + "<br>(" + size + " B)";
+  else if(size<=1048576){
+    size=(size/1024).toFixed(2);
     demoP.innerHTML = name + "<br>(" + size + " KB)";
+  }else{
+    size=(size/1048576).toFixed(2);
+    demoP.innerHTML = name + "<br>(" + size + " MB)";
+  }
     document.getElementById("filenameHolder").value=name;
     document.getElementById('comp').disabled = false;
     document.getElementById('fromDate').disabled = false;
