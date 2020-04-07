@@ -20,7 +20,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
 
-<body>
+<body onload="renderData()">
     <div class="navbar-fixed">
         <nav id="navigation-bar" style="background-color: white;">
             <div class="navbar-fixed">
@@ -88,7 +88,7 @@
     <div id="dataPDF">
 
     </div>
-    <div class="rectangle1" style="top: 643px;">
+    <div class="rectangle1" id="footy">
         <div class="FDetection">FDetection</div>
         <div class="vom">View on map</div>
         <div id="map"></div>
